@@ -4,3 +4,23 @@
     Welcome to {{title}}!
   </h1>
 </div>
+<div>
+  <label for="Subject"></label>
+  <input name = 'subject' type="text" [(ngModel)]= "query">
+  <!-- (click)= click event -->
+  <button (click)="searchPosts()">Submit</button>
+</div>
+<!-- //ngfor only understands arrays -->
+<div>
+  <ul>
+    <li *ngFor="let post of postList">
+      <a href="{{ post.data.url }}">
+        {{ post.data.title }}
+        <img src="{{ post.data.thumbnail }}" alt="">
+      </a>
+      {{ post.data.author }}
+      Ups! {{ post.data.ups }}
+      {{ post.data.created | date }}
+    </li>
+  </ul>
+</div>
