@@ -1,0 +1,9 @@
+body {
+  background-color: lightgray;
+}
+p {
+  text-decoration: underline;
+}
+.filter-input{
+  margin-left: 4px;
+}

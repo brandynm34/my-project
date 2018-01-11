@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   public query: string;
   public queryString: string;
   public postList;
-  title = 'WTT';
+  public searchText;
 
   constructor(
     private http: HttpClient,

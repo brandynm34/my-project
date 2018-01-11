@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "img"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -56,5 +57,9 @@
   "defaults": {
     "styleExt": "css",
     "component": {}
-  }
+  },
+  "styles": [
+  "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "styles.scss"
+]
 }
